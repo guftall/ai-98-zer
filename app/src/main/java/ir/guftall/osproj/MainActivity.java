@@ -39,8 +39,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private ExtAudioRecorder extAudioRecorder;
     private static int fileIncrementPath = 1;
 
-    private TextView tvRecord;
-
     private Timer timer;
     private TimerTask timerTask;
 
@@ -61,7 +59,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.btn_recorder).setOnClickListener(this);
         findViewById(R.id.btn_recorder_stop).setOnClickListener(this);
-        tvRecord = findViewById(R.id.tv_recorder_timer);
 
         findViewById(R.id.tv_recorder_timer).setOnClickListener(new View.OnClickListener() {
             @Override
